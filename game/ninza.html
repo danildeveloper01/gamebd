@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja</title>
+    <link rel="stylesheet" href="css/ninza.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">   
+</head>
+<body>   
+<canvas id="c"></canvas>
+<div class="hud">
+  <div class="hud__score">
+    <div class="score-lbl"></div>
+    <div class="cube-count-lbl"></div>
+  </div>
+  <div class="pause-btn"><div></div></div>
+  <div class="slowmo">
+    <div class="slowmo__bar"></div>
+  </div>
+</div>
+<div class="menus">
+  <div class="menu menu--main">
+    <h1>NINJA</h1>
+    <button type="button" class="play-normal-btn">PLAY GAME</button>
+    <button type="button" class="play-casual-btn">CASUAL MODE</button>    
+  </div>
+  <div class="menu menu--pause">
+    <h1>Paused</h1>
+    <button type="button" class="resume-btn">RESUME GAME</button>
+    <button type="button" class="menu-btn--pause">MAIN MENU</button>
+  </div>
+  <div class="menu menu--score">
+    <h1>Game Over</h1>
+    <h2>Your Score:</h2>
+    <div class="final-score-lbl"></div>
+    <div class="high-score-lbl"></div>
+    <button type="button" class="play-again-btn">PLAY AGAIN</button>
+    <button type="button" class="menu-btn--score">MAIN MENU</button>
+  </div>
+</div>
+
+<script src="js/ninza.js"></script>
+</body>
+</html>
