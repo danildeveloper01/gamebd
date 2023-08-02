@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+
+body{
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Happy Monkey', cursive; 
+    }
+
+.container{
+    width: 1500px;
+}
+
+        /*home.html*/
+
+/*header*/
+
+.logo{
+    font-size: 220px;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.logo_duck{
+    padding-left: 500px;    
+}
+
+.img_logo-duck{
+    width: 80px;
+    position: relative;
+    bottom: 446px;
+    left: 485px;    
+    transform: rotate(-5deg); 
+}
+.arrow-down {    
+    padding-left: 50%;
+    position: relative;
+    bottom: 80px;
+}
+.arrow-down span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #F2EBE9;
+    border-right: 5px solid #F2EBE9;
+    transform: rotate(45deg);
+    margin: -16px;
+    animation: arrow-down 3s infinite;
+}
+.arrow-down span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow-down span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes arrow-down {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+
+/*section*/
+
+.duck_section{
+    font-size: 75px;
+    padding-left: 30%;
+    padding-top: 100px;
+}
+
+.duck-text{
+    padding-left: 20%;
+    padding-top: 20px;
+    font-size: 30px;
+    line-height: 60px;
+    letter-spacing: 0.9em;
+}
+.menu{
+    padding-top: 100px;
+}
+
+.img_menu{
+    width: 225px;
+    height: 225px;
+}
+.link_key{
+    padding-left: 310px;
+}
+.link_speed{
+    padding-left: 110px;
+}
+
+
+.link_game{
+    padding-left: 100px;
+}
+
+.menu_two{
+    padding-top: 100px;
+}
+
+/*footer*/
+
+.text-instruction{
+    padding-top: 100px;
+
+}
+
+.text,
+.link_text_footer{
+    padding-top: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.text:hover,
+.link_text_footer:hover{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+
+/*Responsive*/
+
+/* 1201px - 1400px */
+@media screen and (max-width: 1400px) {
+	.container {
+		width: 1320px;
+	}
+}
+
+/* 993px - 1200px */
+
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 960px;
+	}
+    .logo_duck{
+        padding-left: 300px;  
+    }
+    .img_menu{
+        width: 125px;
+        height: 125px;
+    } 
+}
+
+/* 769px - 992px */
+
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+	}
+    .logo_duck{
+        padding-left: 80px;  
+    }
+    .duck_section{        
+        padding-left: 15%;        
+    }
+    
+    .duck-text{
+        padding-left: 0%;
+        text-align: center;
+    }
+    .img_menu{
+        width: 100px;
+        height: 100px;
+    } 
+    .link_key{
+        padding-left: 210px;
+    }
+    .link_speed{
+        padding-left: 110px;
+    }	
+}
+
+/* 577px - 768px */
+
+@media screen and (max-width: 768px) {
+	.container {
+		width: 540px;
+	}
+    .logo{
+        font-size: 150px; 
+        padding-left: 0;      
+    }
+    
+    .logo_duck{
+        padding-left: 120px;    
+    }
+    
+    .img_logo-duck{
+        width: 45px;
+        position: relative;
+        bottom: 300px;
+        left: 291px;    
+        transform: rotate(17deg); 
+    }
+    .arrow-down {      
+        bottom: 40px;
+    }
+    .img_menu{
+        width: 156px;
+        height: 156px;
+    }
+    .link_key{
+        padding-left: 150px;        
+    }
+    .duck_section{
+        padding-left: 30px;
+    }
+    .duck-text{
+        padding-left: 25px;
+    }
+    .link_speed{        
+        position: relative;
+        top: 50px;
+        padding-left: 150px;
+    }
+    .link_game{
+        padding-left: 150px;        
+    }
+    .s_img{
+        margin-bottom: 50px;
+    }
+    .r-p-s_img{
+        margin-bottom: 50px;
+    }
+  
+}
+
+/* 321px - 576px */
+
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+	}
+    .logo{
+        font-size: 80px; 
+        padding-left: 0;      
+    }
+    
+    .logo_duck{
+        padding-left: 70px;    
+    }
+    .img_logo-duck{
+        width: 25px;
+        position: relative;
+        bottom: 160px;
+        left: 160px;    
+        transform: rotate(17deg); 
+    }
+    
+
+    .duck_section{
+        font-size: 30px;
+        padding-left: 20%;
+        padding-top: 100px;
+    }
+    
+    .duck-text{
+        padding-left: 10%;       
+        font-size: 15px;        
+    }
+    .link_key{
+        padding-left: 50px;        
+    }
+    .link_speed{     
+        padding-left: 50px;
+    }
+    .link_game{
+        padding-left: 50px;        
+    }
+
+
+
+
+
+
+
+    
+}
